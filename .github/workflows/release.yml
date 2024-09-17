@@ -2,7 +2,7 @@ name: Check Zed Releases and Build for Windows
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Runs every 6 hours
+    - cron: '0 30 0 * * ?'  # Runs every day 00:30:00
   workflow_dispatch:
     inputs:
       force_build:
